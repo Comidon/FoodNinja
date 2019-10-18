@@ -1,67 +1,61 @@
-﻿public class Nutrition
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using Assets.Scripts.Utilities;
+
+public class Nutrition
 {
-    private float sugar;
-    private float fat;
-    private float salt;
-    private float protein;
+    private Dictionary<NutritionType, float> nutritionDict=new Dictionary<NutritionType, float>();
 
     public Nutrition()
     {
-        this.sugar = 0;
-        this.fat = 0;
-        this.salt = 0;
-        this.protein = 0;
+        foreach(NutritionType type in Enum.GetValues(typeof(NutritionType)){
+            nutritionDict[type] = 0;
+        }
     }
 
     public Nutrition(float sugar, float fat, float salt, float protein)
     {
-        this.sugar = sugar;
-        this.fat = fat;
-        this.salt = salt;
-        this.protein = protein;
+        nutritionDict[NutritionType.Sugar] = sugar;
+        nutritionDict[NutritionType.Fat] = fat;
+        nutritionDict[NutritionType.Salt] = salt;
+        nutritionDict[NutritionType.Protein] = protein;
     }
 
     public Nutrition(Nutrition nutrition)
-    {
-        sugar = nutrition.Sugar;
-        fat = nutrition.Fat;
-        salt = nutrition.Salt;
-        protein = nutrition.Protein;
-    }
-
-    public static Nutrition operator+ (Nutrition nutrition1,Nutrition nutrition2)
-    {
-        Nutrition nutrition = new Nutrition();
-        nutrition.Sugar = nutrition1.Sugar + nutrition2.Sugar;
-        nutrition.Fat = nutrition1.Fat + nutrition2.Fat;
-        nutrition.Salt = nutrition1.Salt + nutrition2.Salt;
-        nutrition.Protein = nutrition1.Protein + nutrition2.Protein;
-        return nutrition;
+    { 
+        nutritionDict[NutritionType.Sugar] = nutrition.Sugar;
+        nutritionDict[NutritionType.Fat] = nutrition.Fat;
+        nutritionDict[NutritionType.Salt] = nutrition.Salt;
+        nutritionDict[NutritionType.Protein] = nutrition.Protein;
     }
 
     public float Sugar
     {
-        get { return sugar; }
-        set { sugar = value; }
+        get { return nutritionDict[NutritionType.Sugar]; }
+        set { nutritionDict[NutritionType.Sugar] = value; }
     }
 
     public float Fat
     {
-        get { return fat; }
-        set { fat = value; }
+        get { return nutritionDict[NutritionType.Fat]; }
+        set { nutritionDict[NutritionType.Fat] = value; }
     }
 
     public float Salt
     {
-        get { return salt; }
-        set { salt = value; }
+        get { return nutritionDict[NutritionType.Salt]; }
+        set { nutritionDict[NutritionType.Salt] = value; }
     }
 
     public float Protein
     {
-        get { return protein; }
-        set { protein = value; }
+        get { return nutritionDict[NutritionType.Protein]; }
+        set { nutritionDict[NutritionType.Protein] = value; }
     }
 
-
+    public Dictionary<NutritionType,float> getNutritionDict()
+    {
+        return nutritionDict;
+    }
 }
