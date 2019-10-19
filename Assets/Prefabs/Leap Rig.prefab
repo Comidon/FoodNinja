@@ -261,12 +261,12 @@ PrefabInstance:
     - target: {fileID: 3619489974852824617, guid: e2ed288730b00c54e9a435f72ed2cac8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6862679
+      value: -1.764
       objectReference: {fileID: 0}
     - target: {fileID: 3619489974852824617, guid: e2ed288730b00c54e9a435f72ed2cac8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.10706687
+      value: 0.363
       objectReference: {fileID: 0}
     - target: {fileID: 3619489974852824617, guid: e2ed288730b00c54e9a435f72ed2cac8,
         type: 3}
@@ -308,6 +308,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2523556075016268469, guid: e2ed288730b00c54e9a435f72ed2cac8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926102033447389060, guid: e2ed288730b00c54e9a435f72ed2cac8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.554
+      objectReference: {fileID: 0}
     - target: {fileID: 285757088, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelPalmFacing_L.x
       value: 0
@@ -340,6 +350,14 @@ PrefabInstance:
       propertyPath: flippedPalmsState
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 285757081, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+      propertyPath: modelFingerPointing.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285757081, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+      propertyPath: modelFingerPointing.y
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 285757085, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.x
       value: -0
@@ -356,14 +374,6 @@ PrefabInstance:
       propertyPath: modelFingerPointing.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 285757083, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
-      propertyPath: modelFingerPointing.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 285757083, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
-      propertyPath: modelFingerPointing.y
-      value: -0
-      objectReference: {fileID: 0}
     - target: {fileID: 285757082, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.x
       value: -0
@@ -372,11 +382,19 @@ PrefabInstance:
       propertyPath: modelFingerPointing.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 285757081, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+    - target: {fileID: 285757083, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 285757081, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+    - target: {fileID: 285757083, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+      propertyPath: modelFingerPointing.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285757074, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+      propertyPath: modelFingerPointing.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 285757074, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.y
       value: -0
       objectReference: {fileID: 0}
@@ -396,14 +414,6 @@ PrefabInstance:
       propertyPath: modelFingerPointing.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 285757076, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
-      propertyPath: modelFingerPointing.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 285757076, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
-      propertyPath: modelFingerPointing.y
-      value: -0
-      objectReference: {fileID: 0}
     - target: {fileID: 285757075, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.x
       value: -0
@@ -412,11 +422,11 @@ PrefabInstance:
       propertyPath: modelFingerPointing.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 285757074, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+    - target: {fileID: 285757076, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 285757074, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
+    - target: {fileID: 285757076, guid: e2ed288730b00c54e9a435f72ed2cac8, type: 3}
       propertyPath: modelFingerPointing.y
       value: -0
       objectReference: {fileID: 0}
