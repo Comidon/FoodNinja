@@ -9,7 +9,7 @@ public class Nutrition
 
     public Nutrition()
     {
-        foreach(NutritionType type in Enum.GetValues(typeof(NutritionType)){
+        foreach(NutritionType type in Enum.GetValues(typeof(NutritionType))){
             nutritionDict[type] = 0;
         }
     }
