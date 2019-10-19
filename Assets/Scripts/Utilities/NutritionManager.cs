@@ -9,17 +9,17 @@ public class NutritionManager:MonoBehaviour
 {
     private Dictionary<NutritionType, Slider> bars;
 
-    private void Start()
+    private void Awake()
     {
-        //Slider[] sliders = GetComponents<Slider>();
+        bars = new Dictionary<NutritionType, Slider>();
         Slider[] sliders = GetComponentsInChildren<Slider>();
-        foreach(Slider slider in sliders)
+        foreach (Slider slider in sliders)
         {
-            string name = slider.name;
+            string name = slider.gameObject.name;
             NutritionType result;
             if(Enum.TryParse(name, out result))
             {
-                bars[result] = slider;
+                bars.Add(result, slider);
             }
         }
     }
