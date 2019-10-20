@@ -5,12 +5,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Utilities;
 
-public class NutritionManager:MonoBehaviour
+public class NutritionManager : MonoBehaviour
 {
     private Dictionary<NutritionType, Slider> bars;
 
+    // Singleton instance
+    public static NutritionManager instance;
+
     private void Awake()
     {
+        // Singleton check
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+
         bars = new Dictionary<NutritionType, Slider>();
         Slider[] sliders = GetComponentsInChildren<Slider>();
         foreach (Slider slider in sliders)
@@ -37,6 +50,14 @@ public class NutritionManager:MonoBehaviour
         foreach (KeyValuePair<NutritionType, float> entry in nutrition.getNutritionDict())
         {
             bars[entry.Key].GetComponent<BarController>().changeCurrentTotal(entry.Value);
+        }
+    }
+
+    public void subUpNutritionAmount(Nutrition nutrition)
+    {
+        foreach (KeyValuePair<NutritionType, float> entry in nutrition.getNutritionDict())
+        {
+            bars[entry.Key].GetComponent<BarController>().changeCurrentTotal(-entry.Value);
         }
     }
 }

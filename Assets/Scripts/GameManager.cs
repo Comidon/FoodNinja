@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface FoodToAchievement_Interface
+public class GameManager : MonoBehaviour
 {
-    HashSet<Food> GetFoodOnTable();
 }
