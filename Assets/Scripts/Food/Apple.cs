@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Apple : Food
 {
+    [Header("Food Properties")]
     [SerializeField]
     private float appleCalories = 130;
     [SerializeField]

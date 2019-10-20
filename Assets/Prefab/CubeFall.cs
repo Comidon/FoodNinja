@@ -16,8 +16,8 @@ public class CubeFall : MonoBehaviour
 
     void Spawning()
     {
-        Instantiate(cube1, new Vector3(Random.Range(-6, 6), 20, Random.Range(-10, 10)), Quaternion.identity);
-        Instantiate(cylinder1, new Vector3(Random.Range(-6, 6), 20, Random.Range(-10, 10)), Quaternion.identity);
+        FoodFactory.instance.GiveApple(new Vector3(Random.Range(-3, 3), 20, Random.Range(-10, 10)));
+        FoodFactory.instance.GiveCandybar(new Vector3(Random.Range(-3, 3), 20, Random.Range(-10, 10)));
     }
     // Update is called once per frame
     void Update()

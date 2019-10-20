@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CandyBar : Food
 {
+    [Header("Food Properties")]
     [SerializeField]
     private float candyBarCalories = 210;
     [SerializeField]

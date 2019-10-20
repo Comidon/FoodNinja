@@ -10,14 +10,14 @@ public class NutritionBarTest : MonoBehaviour
     {
         print("Test Start");
         nutritionManager = GetComponentInChildren<NutritionManager>();
-        Nutrition nutrition = new Nutrition(100, 100, 100, 100);
+        Nutrition nutrition = new Nutrition(100, 100, 100, 100, 100);
         nutritionManager.initializeNutritionTotal(nutrition);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Nutrition nutrition = new Nutrition((float)0.01, (float)0.01, (float)0.01, (float)0.01);
+        Nutrition nutrition = new Nutrition((float)0.01, (float)0.01, (float)0.01, (float)0.01, (float)0.01);
         nutritionManager.addUpNutritionAmount(nutrition);
     }
 }
