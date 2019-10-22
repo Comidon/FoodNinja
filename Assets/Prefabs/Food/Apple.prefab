@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3428554788690593141}
   - component: {fileID: 7076340199147761748}
   - component: {fileID: 5238193339847389243}
+  - component: {fileID: 7020942631628408526}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &7076340199147761748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 928a842c1aa9a0c4ebe78001f8e62ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  fadeOutDuration: 100
   appleCalories: 130
   appleSugar: 34
   appleFat: 0
@@ -128,3 +129,33 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.011750406
   m_Center: {x: 0.0007319967, y: 0.0020911484, z: 0}
+--- !u!114 &7020942631628408526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6181370569565740583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f10fa40360571247a7ca806d6859557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manager: {fileID: 0}
+  _ignoreHoverMode: 0
+  _isIgnoringAllHoverState: 0
+  _ignorePrimaryHover: 0
+  _ignoreContact: 0
+  _ignoreGrasping: 0
+  _contactForceMode: 0
+  _allowMultiGrasp: 0
+  _moveObjectWhenGrasped: 1
+  graspedMovementType: 0
+  _overrideInteractionLayer: 0
+  _interactionLayer:
+    layerIndex: 0
+  _overrideNoContactLayer: 0
+  _noContactLayer:
+    layerIndex: 0
+  _eventTable:
+    _entries: []

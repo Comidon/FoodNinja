@@ -18,6 +18,8 @@ public class CandyBar : Food
 
     private void Awake()
     {
+        material = GetComponent<MeshRenderer>().material;
+        color = material.color;
         nutrition = new Nutrition(candyBarCalories, candyBarSugar, candyBarFat, candyBarSalt, candyBarProtein);
     }
 }

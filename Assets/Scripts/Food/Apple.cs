@@ -18,6 +18,8 @@ public class Apple : Food
 
     private void Awake()
     {
+        material = GetComponent<MeshRenderer>().material;
+        color = material.color;
         nutrition = new Nutrition(appleCalories, appleSugar, appleFat, appleSalt, appleProtein);
     }
 }
