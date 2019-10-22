@@ -35,6 +35,9 @@ public class NutritionManager : MonoBehaviour
                 bars.Add(result, slider);
             }
         }
+
+        // TEMP:
+        initializeNutritionTotal(new Nutrition(2000, 100, 100, 100, 100));
     }
 
     public void initializeNutritionTotal(Nutrition nutrition)

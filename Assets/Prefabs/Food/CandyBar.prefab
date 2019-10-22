@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7526148705331085095}
   - component: {fileID: 4182603429702076556}
   - component: {fileID: 9076862264614317718}
+  - component: {fileID: 8762339159117963922}
   m_Layer: 0
   m_Name: CandyBar
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &4182603429702076556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69a46468fee40014e8ddeb2a6d768f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  fadeOutDuration: 100
   candyBarCalories: 210
   candyBarSugar: 27
   candyBarFat: 11
@@ -128,3 +129,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010874382, y: 0.04957403, z: 0.011898323}
   m_Center: {x: -0.00043719143, y: 0.0066994433, z: 0}
+--- !u!114 &8762339159117963922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7783274558291676903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f10fa40360571247a7ca806d6859557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _manager: {fileID: 0}
+  _ignoreHoverMode: 0
+  _isIgnoringAllHoverState: 0
+  _ignorePrimaryHover: 0
+  _ignoreContact: 0
+  _ignoreGrasping: 0
+  _contactForceMode: 0
+  _allowMultiGrasp: 0
+  _moveObjectWhenGrasped: 1
+  graspedMovementType: 0
+  _overrideInteractionLayer: 0
+  _interactionLayer:
+    layerIndex: 0
+  _overrideNoContactLayer: 0
+  _noContactLayer:
+    layerIndex: 0
+  _eventTable:
+    _entries: []
