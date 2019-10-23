@@ -17,9 +17,9 @@ public class cube1 : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.name == "Floor")
+        if (col.gameObject.CompareTag("Floor"))
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

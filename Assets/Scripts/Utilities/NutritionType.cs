@@ -8,9 +8,10 @@ namespace Assets.Scripts.Utilities
 {
     public enum NutritionType
     {
-        Sugar=0,
-        Fat=1,
-        Salt=2,
-        Protein=3
+        Calories=0,
+        Sugar=1,
+        Fat=2,
+        Salt=3,
+        Protein=4
     }
 }

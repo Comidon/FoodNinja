@@ -14,8 +14,9 @@ public class Nutrition
         }
     }
 
-    public Nutrition(float sugar, float fat, float salt, float protein)
+    public Nutrition(float Calories, float sugar, float fat, float salt, float protein)
     {
+        nutritionDict[NutritionType.Calories] = Calories;
         nutritionDict[NutritionType.Sugar] = sugar;
         nutritionDict[NutritionType.Fat] = fat;
         nutritionDict[NutritionType.Salt] = salt;
@@ -23,11 +24,18 @@ public class Nutrition
     }
 
     public Nutrition(Nutrition nutrition)
-    { 
+    {
+        nutritionDict[NutritionType.Calories] = Calories;
         nutritionDict[NutritionType.Sugar] = nutrition.Sugar;
         nutritionDict[NutritionType.Fat] = nutrition.Fat;
         nutritionDict[NutritionType.Salt] = nutrition.Salt;
         nutritionDict[NutritionType.Protein] = nutrition.Protein;
+    }
+    
+    public float Calories
+    {
+        get { return nutritionDict[NutritionType.Calories]; }
+        set { nutritionDict[NutritionType.Calories] = value; }
     }
 
     public float Sugar
