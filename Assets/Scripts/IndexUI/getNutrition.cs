@@ -8,11 +8,11 @@ public class getNutrition : MonoBehaviour
     private double weight;
     private double height;
     private decimal age;
-    private float kcal;
-    private float sugar;
-    private float salt;
-    private float protein;
-    private float fat;
+    public static float kcal;
+    public static float sugar;
+    public static float salt;
+    public static float protein;
+    public static float fat;
     // Start is called before the first frame update
     void Start()
     {

@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/opening.unity
+    guid: 781ceccca6dd5bc4ab2a3662291a14ed
+  - enabled: 1
+    path: Assets/Hover/InputModules/LeapMotion/Scenes/HoverInputModule-LeapMotion.unity
+    guid: 6894becb3615e644b9abca2f3f89d801
+  - enabled: 1
+    path: Assets/Scenes/Don'sTest.unity
+    guid: 631f7367b18f0f74986bc18d2175919d
   m_configObjects: {}
