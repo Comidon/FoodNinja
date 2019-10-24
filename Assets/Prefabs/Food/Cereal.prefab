@@ -88,8 +88,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8980994669467365657}
   m_Layer: 0
-  m_Name: Cereal 1
-  m_TagString: Untagged
+  m_Name: Cereal
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
