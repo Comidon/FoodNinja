@@ -37,7 +37,7 @@ public class NutritionManager : MonoBehaviour
         }
 
         // TEMP:
-        initializeNutritionTotal(new Nutrition(2000, 100, 100, 100, 100));
+        initializeNutritionTotal(new Nutrition(getNutrition.kcal, getNutrition.sugar, getNutrition.fat, getNutrition.salt, getNutrition.protein));
     }
 
     public void initializeNutritionTotal(Nutrition nutrition)
