@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class ProteinSetter : AchievementValueSetter
 {
+    public override Food getMax()
+    {
+        Food result = null;
+        float max = 0;
+        foreach (Food food in FoodToAchievement.GetFoodOnTable())
+        {
+            if (food.nutrition.Protein > max)
+            {
+                result = food;
+                max = food.nutrition.Protein;
+            }
+        }
+
+        return result;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
