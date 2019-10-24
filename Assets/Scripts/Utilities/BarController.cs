@@ -25,4 +25,14 @@ public class BarController : MonoBehaviour
     {
         this.currentTotal += amount;
     }
+
+    public float Maximum
+    {
+        get { return maximum; }
+    }
+
+    public float CurrentTotal
+    {
+        get { return currentTotal; }
+    }
 }

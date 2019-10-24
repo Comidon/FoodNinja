@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Utilities;
 
 public class FoodFactory : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class FoodFactory : MonoBehaviour
     private GameObject apple;
     [SerializeField]
     private GameObject candyBar;
+
+    private Dictionary<FoodType, GameObject> foodReference;
 
     public static FoodFactory instance;
 
@@ -22,6 +25,15 @@ public class FoodFactory : MonoBehaviour
         {
             Destroy(this);
         }
+
+        foodReference = new Dictionary<FoodType, GameObject>();
+        foodReference[FoodType.Apple] = apple;
+        foodReference[FoodType.CandyBar] = candyBar;
+    }
+
+    public GameObject GiveFood(FoodType type, Vector3 pos)
+    {
+        return Instantiate(foodReference[type], pos, Quaternion.identity);
     }
 
     public GameObject GiveApple()
