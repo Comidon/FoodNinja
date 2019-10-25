@@ -24,7 +24,28 @@ public abstract class AchievementValueSetter:MonoBehaviour
 
     protected void setBar(float total,float max)
     {
+        float value = total / max * 100;
         Nutrition_Slider.value = total / max > 1 ? 100 : total / max * 100;
+        Image fill_area = null;
+        foreach(Image image in Nutrition_Slider.GetComponentsInChildren<Image>())
+        {
+            if (image.name == "Fill")
+            {
+                fill_area = image;
+            }
+        }
+
+        if (value < 90)
+        {
+            fill_area.color = Color.yellow;
+        }else if (value >= 90 && value <= 110)
+        {
+            fill_area.color = Color.green;
+        }
+        else
+        {
+            fill_area.color = Color.red;
+        }
     }
 
     protected void setTotal(float nutrition)
@@ -42,13 +63,16 @@ public abstract class AchievementValueSetter:MonoBehaviour
         //for testing
         string foodtype = "Apple";
 
-        GameObject gameObject= Instantiate(Resources.Load(foodtype) as GameObject, new Vector3(-600, 0, 0), Quaternion.identity);
+        GameObject gameObject= Instantiate(Resources.Load(foodtype) as GameObject);
         gameObject.transform.parent = panel.transform;
+        gameObject.transform.localPosition = new Vector3(-400, 0, 0);
+        gameObject.GetComponent<Rigidbody>().useGravity = false;
+        //gameObject.transform.localScale = new Vector3((float)5, (float)5, (float)5);
     }
 
     protected void setWholeString()
     {
-        Content.text= "Do you know that " + pri_type + " contains\n" + pri_amount + "% of your daily " + pri_nutrition + " value?";
+        Content.text= "Do you know that " + pri_type + " contains " + pri_amount + "% of your daily " + pri_nutrition + " value?";
     }
 
     protected void setFoodType()
