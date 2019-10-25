@@ -494,7 +494,6 @@ MonoBehaviour:
   Nutrition_Slider: {fileID: 973047151}
   Total_Amount_Text: {fileID: 24459098}
   Expected_Amount_Text: {fileID: 51635772}
-  Food_Type: {fileID: 0}
   Content: {fileID: 0}
 --- !u!1001 &10509337
 PrefabInstance:
@@ -3088,7 +3087,6 @@ MonoBehaviour:
   Nutrition_Slider: {fileID: 1852606671}
   Total_Amount_Text: {fileID: 157231371}
   Expected_Amount_Text: {fileID: 1901314277}
-  Food_Type: {fileID: 0}
   Content: {fileID: 1137065686}
 --- !u!1 &211717673
 GameObject:
@@ -7979,7 +7977,6 @@ MonoBehaviour:
   Nutrition_Slider: {fileID: 821226182}
   Total_Amount_Text: {fileID: 1021433346}
   Expected_Amount_Text: {fileID: 907461068}
-  Food_Type: {fileID: 0}
   Content: {fileID: 1585072860}
 --- !u!1 &501837150
 GameObject:
@@ -9854,7 +9851,6 @@ MonoBehaviour:
   Nutrition_Slider: {fileID: 1473532588}
   Total_Amount_Text: {fileID: 2094275555}
   Expected_Amount_Text: {fileID: 668459153}
-  Food_Type: {fileID: 1978167775}
   Content: {fileID: 718357984}
 --- !u!1 &656471723
 GameObject:
@@ -18060,7 +18056,6 @@ MonoBehaviour:
   Nutrition_Slider: {fileID: 677063336}
   Total_Amount_Text: {fileID: 2044235557}
   Expected_Amount_Text: {fileID: 264623643}
-  Food_Type: {fileID: 742373823}
   Content: {fileID: 672279773}
 --- !u!1 &1325707582
 GameObject:
