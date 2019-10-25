@@ -27,13 +27,11 @@ public class SugarSetter : AchievementValueSetter
         float total = DataToAchievement.Expected_Default.Sugar;
         float max = DataToAchievement.Max_Default.Sugar;
 
-        //Food food = getMax();
-        //Food food = ;
-        loadMesh("Apple");
-
+        Food food = getMax();
+        pri_type = food.type.ToString();
+        loadMesh(pri_type);
+        pri_amount = (food.nutrition.Sugar/max*100).ToString("R");
         pri_nutrition = NutritionType.Sugar.ToString();
-        pri_type = "Apple";
-        pri_amount = "30.5";
 
         setBar(total, max);
         setTotal(total);

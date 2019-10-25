@@ -61,13 +61,15 @@ public abstract class AchievementValueSetter:MonoBehaviour
     protected void loadMesh(string food_type)
     {
         //for testing
-        string foodtype = "Apple";
+        //string foodtype = "Apple";
 
-        GameObject gameObject= Instantiate(Resources.Load(foodtype) as GameObject);
+        GameObject gameObject= Instantiate(Resources.Load(food_type) as GameObject);
         gameObject.transform.parent = panel.transform;
-        gameObject.transform.localPosition = new Vector3(-400, 0, 0);
+        gameObject.transform.localPosition = new Vector3(-600, 0, 0);
+        gameObject.transform.localScale = new Vector3(8000f, 8000f, 8000f);
         gameObject.GetComponent<Rigidbody>().useGravity = false;
-        //gameObject.transform.localScale = new Vector3((float)5, (float)5, (float)5);
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        gameObject.GetComponent<Collider>().enabled = false;
     }
 
     protected void setWholeString()
