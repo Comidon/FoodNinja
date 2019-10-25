@@ -36,7 +36,6 @@ public class ProteinSetter : AchievementValueSetter
         setBar(total, max);
         setTotal(total);
         setMaximum(max);
-        setFoodType();
         setWholeString();
     }
 

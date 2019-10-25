@@ -29,14 +29,14 @@ public class SugarSetter : AchievementValueSetter
 
         Food food = getMax();
         pri_type = food.type.ToString();
-        loadMesh(pri_type);
         pri_amount = (food.nutrition.Sugar/max*100).ToString("R");
         pri_nutrition = NutritionType.Sugar.ToString();
+
+        loadMesh(pri_type);
 
         setBar(total, max);
         setTotal(total);
         setMaximum(max);
-        setFoodType();
         setWholeString();
     }
 

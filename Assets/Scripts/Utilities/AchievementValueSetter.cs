@@ -15,7 +15,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
     public Text Total_Amount_Text;
     public Text Expected_Amount_Text;
     public Text Food_Type;
-    public Text Content;
+    public TextMesh Content;
     public FoodToAchievement_Interface FoodToAchievement;
 
     protected string pri_type;
@@ -74,12 +74,12 @@ public abstract class AchievementValueSetter:MonoBehaviour
 
     protected void setWholeString()
     {
-        Content.text= "Do you know that " + pri_type + " contains " + pri_amount + "% of your daily " + pri_nutrition + " value?";
-    }
-
-    protected void setFoodType()
-    {
-        Food_Type.text = pri_type;
+        /**
+        pri_type = "Apple";
+        pri_amount = "35";
+        pri_nutrition = "Sugar";
+    */
+        Content.text= "Do you know that the amount of " + pri_nutrition + "\n ONE " + pri_type + " contains makes up of\n" + pri_amount + "% of your daily value?";
     }
 
     public abstract Food getMax();
