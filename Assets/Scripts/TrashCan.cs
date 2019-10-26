@@ -13,7 +13,14 @@ public class TrashCan : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Food"))
         {
-            other.GetComponent<Food>().CollectPoints();
+            if (other.transform.parent != null)
+            {
+                other.transform.parent.GetComponent<Food>().CollectPoints();
+            }
+            else
+            {
+                other.GetComponent<Food>().CollectPoints();
+            }
         }
     }
 }

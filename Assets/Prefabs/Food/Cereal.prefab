@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 8980994669467365657}
   - component: {fileID: -7696692745130387844}
   - component: {fileID: 2244560993965685922}
+  - component: {fileID: -1773002136962139266}
   m_Layer: 0
   m_Name: Cereal
   m_TagString: Food
@@ -120,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 5402559000196776714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.221, z: 0.104}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.632624, y: 1.632624, z: 1.632624}
   m_Children:
   - {fileID: 6347092715547716578}
   - {fileID: 7101170200885538410}
@@ -173,6 +174,24 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &-1773002136962139266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402559000196776714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111996c409d7fb0479ed3ddd378c1e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutDuration: 100
+  calories: 130
+  sugar: 34
+  fat: 0
+  salt: 0
+  protein: 1
 --- !u!1 &7839272555292984835
 GameObject:
   m_ObjectHideFlags: 0

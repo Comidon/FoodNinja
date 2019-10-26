@@ -10,6 +10,30 @@ public class FoodFactory : MonoBehaviour
     private GameObject apple;
     [SerializeField]
     private GameObject candyBar;
+    [SerializeField]
+    private GameObject cereal;
+    [SerializeField]
+    private GameObject chips;
+    [SerializeField]
+    private GameObject cola;
+    [SerializeField]
+    private GameObject fish;
+    [SerializeField]
+    private GameObject friedChicken;
+    [SerializeField]
+    private GameObject icecream;
+    [SerializeField]
+    private GameObject peanutButterBad;
+    [SerializeField]
+    private GameObject peanutButterGood;
+    [SerializeField]
+    private GameObject peanuts;
+    [SerializeField]
+    private GameObject pizza;
+    [SerializeField]
+    private GameObject riceB;
+    [SerializeField]
+    private GameObject riceW;
 
     private Dictionary<FoodType, GameObject> foodReference;
 
@@ -29,6 +53,18 @@ public class FoodFactory : MonoBehaviour
         foodReference = new Dictionary<FoodType, GameObject>();
         foodReference[FoodType.Apple] = apple;
         foodReference[FoodType.CandyBar] = candyBar;
+        foodReference[FoodType.Cereal] = cereal;
+        foodReference[FoodType.Chips] = chips;
+        foodReference[FoodType.Cola] = cola;
+        foodReference[FoodType.Fish] = fish;
+        foodReference[FoodType.FriedChicken] = friedChicken;
+        foodReference[FoodType.Icecream] = icecream;
+        foodReference[FoodType.PeanutButterBad] = peanutButterBad;
+        foodReference[FoodType.PeanutButterGood] = peanutButterGood;
+        foodReference[FoodType.Peanuts] = peanuts;
+        foodReference[FoodType.Pizza] = pizza;
+        foodReference[FoodType.RiceB] = riceB;
+        foodReference[FoodType.RiceW] = riceW;
     }
 
     public GameObject GiveFood(FoodType type, Vector3 pos)

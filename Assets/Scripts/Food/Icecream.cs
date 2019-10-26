@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Apple : Food
+public class Icecream : Food
 {
     [Header("Food Properties")]
     [SerializeField]
-    private float appleCalories = 130;
+    private float calories = 130;
     [SerializeField]
-    private float appleSugar = 34;
+    private float sugar = 34;
     [SerializeField]
-    private float appleFat = 0;
+    private float fat = 0;
     [SerializeField]
-    private float appleSalt = 0;
+    private float salt = 0;
     [SerializeField]
-    private float appleProtein = 1;
+    private float protein = 1;
 
     private void Awake()
     {
@@ -27,6 +27,6 @@ public class Apple : Food
             materials.Add(item.material);
         }
 
-        nutrition = new Nutrition(appleCalories, appleSugar, appleFat, appleSalt, appleProtein);
+        nutrition = new Nutrition(calories, sugar, fat, salt, protein);
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7675570820413822343}
   - component: {fileID: -5547601412394033467}
   - component: {fileID: -8348135616678576078}
+  - component: {fileID: 1559464548651094920}
   m_Layer: 0
   m_Name: Pizza
   m_TagString: Food
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7547071751055124064}
   m_LocalRotation: {x: -0.08710354, y: 0, z: 0, w: 0.9961993}
   m_LocalPosition: {x: -0.15000005, y: 0.27874035, z: -0.0021142848}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6316, y: 1.6316, z: 1.6316}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -141,3 +142,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: -2304508562620316840, guid: acdee755e447a8d4e83c627a59b4ca34, type: 3}
+--- !u!114 &1559464548651094920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7547071751055124064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468b6a8d5ae60ff44bde3d9ce7584eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutDuration: 100
+  calories: 130
+  sugar: 34
+  fat: 0
+  salt: 0
+  protein: 1

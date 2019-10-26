@@ -47,11 +47,9 @@ public class SpawnerRing : MonoBehaviour
 
         Vector3 vecDiff = new Vector3(radius * (float)Math.Sin(angle), 0, radius * (float)Math.Cos(angle));
 
-        Debug.Log(vecDiff);
-
         GameObject food = FoodFactory.instance.GiveFood(randomType, pos + vecDiff);
 
-        Vector3 vecForce = -vecDiff.normalized + new Vector3(0, forceHeight, 0) * force;
+        Vector3 vecForce = (-vecDiff.normalized + new Vector3(0, forceHeight, 0)) * force;
 
         food.GetComponent<Rigidbody>().AddForce(vecForce, ForceMode.VelocityChange);
     }

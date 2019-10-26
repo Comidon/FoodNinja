@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3971427052056460239}
   - component: {fileID: -1568743538911850596}
   - component: {fileID: 980047410382441150}
+  - component: {fileID: -2008957779327042504}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Food
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 91776253532916188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.262, z: -0.251}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.94387, y: 1.94387, z: 1.94387}
   m_Children:
   - {fileID: 2967198341925973967}
   - {fileID: 4463994649637459251}
@@ -84,6 +85,24 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &-2008957779327042504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91776253532916188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a88c7377536f5f4ea698e9b2f5b20cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutDuration: 100
+  calories: 130
+  sugar: 34
+  fat: 0
+  salt: 0
+  protein: 1
 --- !u!1 &349277618088991080
 GameObject:
   m_ObjectHideFlags: 0

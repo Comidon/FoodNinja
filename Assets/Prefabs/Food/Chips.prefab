@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6037143812917303832}
   - component: {fileID: 2600084220217657417}
   - component: {fileID: -1285696872823812614}
+  - component: {fileID: -4762774957011435636}
   m_Layer: 0
   m_Name: Chips
   m_TagString: Food
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 765227550605363100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.126, y: 0.273, z: -0.16}
-  m_LocalScale: {x: 0.65533817, y: 0.65533817, z: 0.65533817}
+  m_LocalScale: {x: 1.3876786, y: 1.3876786, z: 1.3876786}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -141,3 +142,21 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 878951038603269014, guid: 18d833f0afc31a94bbf3f4feb965ccec, type: 3}
+--- !u!114 &-4762774957011435636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765227550605363100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaaa856ed97aec4aba9cdf7b7769e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutDuration: 100
+  calories: 130
+  sugar: 34
+  fat: 0
+  salt: 0
+  protein: 1
