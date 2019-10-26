@@ -22,6 +22,8 @@ public class Chips : Food
 
         materials = new List<Material>();
 
+        type = Assets.Scripts.Utilities.FoodType.Chips;
+
         foreach (MeshRenderer item in meshs)
         {
             materials.Add(item.material);

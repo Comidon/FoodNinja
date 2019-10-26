@@ -22,6 +22,8 @@ public class FriedChicken : Food
 
         materials = new List<Material>();
 
+        type = Assets.Scripts.Utilities.FoodType.FriedChicken;
+
         foreach (MeshRenderer item in meshs)
         {
             materials.Add(item.material);

@@ -22,6 +22,8 @@ public class Fish : Food
 
         materials = new List<Material>();
 
+        type = Assets.Scripts.Utilities.FoodType.Fish;
+
         foreach (MeshRenderer item in meshs)
         {
             materials.Add(item.material);

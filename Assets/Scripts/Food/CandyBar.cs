@@ -22,6 +22,8 @@ public class CandyBar : Food
 
         materials = new List<Material>();
 
+        type = Assets.Scripts.Utilities.FoodType.CandyBar;
+
         foreach (MeshRenderer item in meshs)
         {
             materials.Add(item.material);

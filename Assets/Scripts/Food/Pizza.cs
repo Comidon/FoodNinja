@@ -22,6 +22,8 @@ public class Pizza : Food
 
         materials = new List<Material>();
 
+        type = Assets.Scripts.Utilities.FoodType.Pizza;
+
         foreach (MeshRenderer item in meshs)
         {
             materials.Add(item.material);
