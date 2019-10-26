@@ -12,8 +12,7 @@ public class Food : MonoBehaviour
     [SerializeField]
     private int fadeOutDuration = 100;
 
-    protected Color color;
-    protected Material material;
+    protected List<Material> materials;
 
     private bool dead = false;
 
@@ -35,8 +34,13 @@ public class Food : MonoBehaviour
 
         while (i > 0)
         {
-            color.a = (float) i / fadeOutDuration;
-            material.color = color;
+            for (int j = 0; j < materials.Count; j++)
+            {
+                Color tempC = materials[j].color;
+                tempC.a = (float)i / fadeOutDuration;
+                materials[j].color = tempC;
+            }
+            
             i--;
 
             yield return 0;

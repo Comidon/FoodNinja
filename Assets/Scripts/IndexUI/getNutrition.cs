@@ -71,7 +71,7 @@ public class getNutrition : MonoBehaviour
     }
     public void getSalt()
     {
-        salt =(float)2.3;
+        salt =(float)2300;
     }
     public void getProtein()
     {

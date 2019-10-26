@@ -8,7 +8,7 @@ public static class DataToAchievement
 {
     public static Nutrition Expected { get; set; }
     public static Nutrition Max { get; set; }
-
+    public static HashSet<Food> food;
 
 
     //for testing
