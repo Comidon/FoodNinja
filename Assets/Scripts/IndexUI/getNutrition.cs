@@ -79,7 +79,7 @@ public class getNutrition : MonoBehaviour
     }
     public void getFat()
     {
-        fat = (kcal/4) - sugar - salt - protein;
+        fat = (kcal/4) - sugar - (salt/1000) - protein;
     }
 
     // Update is called once per frame

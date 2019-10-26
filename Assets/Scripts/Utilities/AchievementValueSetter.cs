@@ -61,7 +61,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
     {
         //for testing
         //string foodtype = "Apple";
-        //print("food type:" + food_type);
+        print("food type:" + food_type);
         GameObject gameObject= Instantiate(Resources.Load(food_type) as GameObject);
         gameObject.transform.parent = panel.transform;
         gameObject.transform.localPosition = new Vector3(-600, 0, 0);
@@ -78,6 +78,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
         pri_amount = "35";
         pri_nutrition = "Sugar";
     */
+        print("Do you know that the amount of " + pri_nutrition + "\n ONE " + pri_type + " contains makes up of\n" + pri_amount + "% of your daily value?");
         Content.text= "Do you know that the amount of " + pri_nutrition + "\n ONE " + pri_type + " contains makes up of\n" + pri_amount + "% of your daily value?";
     }
 
