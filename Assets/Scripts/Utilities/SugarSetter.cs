@@ -9,7 +9,7 @@ public class SugarSetter : AchievementValueSetter
     {
         Food result = null;
         float max = 0;
-        foreach (Food food in FoodToAchievement.GetFoodOnTable())
+        foreach (Food food in DataToAchievement.food)
         {
             if (food.nutrition.Sugar > max)
             {
@@ -24,8 +24,8 @@ public class SugarSetter : AchievementValueSetter
     // Start is called before the first frame update
     void Start()
     {
-        float total = DataToAchievement.Expected_Default.Sugar;
-        float max = DataToAchievement.Max_Default.Sugar;
+        float total = DataToAchievement.Expected.Sugar;
+        float max = DataToAchievement.Max.Sugar;
 
         Food food = getMax();
         pri_type = food.type.ToString();

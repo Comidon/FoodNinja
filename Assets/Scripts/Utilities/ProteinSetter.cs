@@ -9,7 +9,7 @@ public class ProteinSetter : AchievementValueSetter
     {
         Food result = null;
         float max = 0;
-        foreach (Food food in FoodToAchievement.GetFoodOnTable())
+        foreach (Food food in DataToAchievement.food)
         {
             if (food.nutrition.Protein > max)
             {
@@ -24,8 +24,8 @@ public class ProteinSetter : AchievementValueSetter
     // Start is called before the first frame update
     void Start()
     {
-        float total = DataToAchievement.Expected_Default.Protein;
-        float max = DataToAchievement.Max_Default.Protein;
+        float total = DataToAchievement.Expected.Protein;
+        float max = DataToAchievement.Max.Protein;
 
         Food food = getMax();
         pri_type = food.type.ToString();

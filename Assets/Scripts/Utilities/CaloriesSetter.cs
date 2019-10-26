@@ -8,7 +8,7 @@ public class CaloriesSetter : AchievementValueSetter
     {
         Food result=null;
         float max = 0;
-        foreach(Food food in FoodToAchievement.GetFoodOnTable())
+        foreach(Food food in DataToAchievement.food)
         {
             if (food.nutrition.Calories > max)
             {
@@ -23,8 +23,8 @@ public class CaloriesSetter : AchievementValueSetter
     // Start is called before the first frame update
     void Start()
     {
-        float total = DataToAchievement.Expected_Default.Calories;
-        float max = DataToAchievement.Max_Default.Calories;
+        float total = DataToAchievement.Expected.Calories;
+        float max = DataToAchievement.Max.Calories;
 
         Food food = getMax();
         pri_type = food.type.ToString();

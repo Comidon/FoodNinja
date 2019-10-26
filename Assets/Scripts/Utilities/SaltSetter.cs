@@ -9,7 +9,7 @@ public class SaltSetter : AchievementValueSetter
     {
         Food result = null;
         float max = 0;
-        foreach (Food food in FoodToAchievement.GetFoodOnTable())
+        foreach (Food food in DataToAchievement.food)
         {
             if (food.nutrition.Salt > max)
             {
@@ -24,8 +24,8 @@ public class SaltSetter : AchievementValueSetter
     // Start is called before the first frame update
     void Start()
     {
-        float total = DataToAchievement.Expected_Default.Salt;
-        float max = DataToAchievement.Max_Default.Salt;
+        float total = DataToAchievement.Expected.Salt;
+        float max = DataToAchievement.Max.Salt;
 
         Food food = getMax();
         pri_type = food.type.ToString();
