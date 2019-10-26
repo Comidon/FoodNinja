@@ -28,8 +28,8 @@ public class GoodToGo : MonoBehaviour
 
         if (_counting)
         {
-            DataToAchievement.Expected = NutritionManager.instance.getExpectedTotal();
-            DataToAchievement.Max = NutritionManager.instance.getCollectedTotal();
+            DataToAchievement.Expected = NutritionManager.instance.getCollectedTotal();
+            DataToAchievement.Max = NutritionManager.instance.getExpectedTotal();
             DataToAchievement.food = table.GetFoodOnTable();
             SceneManager.LoadScene("Dynamic UI");
         }
