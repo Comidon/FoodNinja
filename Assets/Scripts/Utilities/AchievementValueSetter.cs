@@ -68,7 +68,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
         gameObject.transform.localScale = new Vector3(7000f, 7000f, 7000f);
         gameObject.GetComponent<Rigidbody>().useGravity = false;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        gameObject.GetComponent<Collider>().enabled = false;
+        //gameObject.GetComponent<Collider>().enabled = false;
     }
 
     protected void setWholeString()
