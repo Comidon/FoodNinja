@@ -11,7 +11,7 @@ public class ProteinSetter : AchievementValueSetter
         float max = 0;
         foreach (Food food in DataToAchievement.food)
         {
-            if (food.nutrition.Protein > max)
+            if (food.nutrition.Protein >= max)
             {
                 result = food;
                 max = food.nutrition.Protein;

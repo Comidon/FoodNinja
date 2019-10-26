@@ -11,7 +11,7 @@ public class SaltSetter : AchievementValueSetter
         float max = 0;
         foreach (Food food in DataToAchievement.food)
         {
-            if (food.nutrition.Salt > max)
+            if (food.nutrition.Salt >= max)
             {
                 result = food;
                 max = food.nutrition.Salt;

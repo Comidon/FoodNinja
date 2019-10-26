@@ -10,7 +10,7 @@ public class CaloriesSetter : AchievementValueSetter
         float max = 0;
         foreach(Food food in DataToAchievement.food)
         {
-            if (food.nutrition.Calories > max)
+            if (food.nutrition.Calories >= max)
             {
                 result = food;
                 max = food.nutrition.Calories;

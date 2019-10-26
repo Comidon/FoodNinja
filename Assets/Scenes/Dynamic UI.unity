@@ -494,7 +494,7 @@ MonoBehaviour:
   Nutrition_Slider: {fileID: 973047151}
   Total_Amount_Text: {fileID: 24459098}
   Expected_Amount_Text: {fileID: 51635772}
-  Content: {fileID: 0}
+  Content: {fileID: 405853347}
 --- !u!1001 &10509337
 PrefabInstance:
   m_ObjectHideFlags: 0
