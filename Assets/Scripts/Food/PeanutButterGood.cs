@@ -22,6 +22,8 @@ public class PeanutButterGood : Food
 
         materials = new List<Material>();
 
+        type = Assets.Scripts.Utilities.FoodType.PeanutButterGood;
+
         foreach (MeshRenderer item in meshs)
         {
             materials.Add(item.material);
