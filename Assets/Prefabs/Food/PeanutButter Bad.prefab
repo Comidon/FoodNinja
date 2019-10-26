@@ -89,9 +89,10 @@ GameObject:
   - component: {fileID: 472722891088091320}
   - component: {fileID: 8989967257841997825}
   - component: {fileID: 3676935014709356108}
+  - component: {fileID: 3296840644266485088}
   m_Layer: 0
   m_Name: polySurface12
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,6 +157,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3296840644266485088
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647575860898940742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 272620219224400015, guid: 65e3a73a79d5dff40bec4d4fb524c80e, type: 3}
 --- !u!1 &1526877717128697589
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +263,7 @@ GameObject:
   - component: {fileID: 5292366078497215707}
   m_Layer: 0
   m_Name: polySurface14
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

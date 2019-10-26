@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4995658284843477552}
   m_Layer: 0
   m_Name: Cereal_1
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: -7696692745130387844}
   - component: {fileID: 2244560993965685922}
   - component: {fileID: -1773002136962139266}
+  - component: {fileID: 2644510632222723755}
   m_Layer: 0
   m_Name: Cereal
   m_TagString: Food
@@ -192,6 +193,19 @@ MonoBehaviour:
   fat: 0
   salt: 0
   protein: 1
+--- !u!65 &2644510632222723755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402559000196776714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.09668914, y: 0.0339069, z: 0.09928722}
+  m_Center: {x: -0.0016554641, y: 0.49666712, z: -0.0017223294}
 --- !u!1 &7839272555292984835
 GameObject:
   m_ObjectHideFlags: 0
