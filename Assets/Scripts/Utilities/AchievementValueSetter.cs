@@ -61,7 +61,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
     {
         //for testing
         //string foodtype = "Apple";
-
+        //print("food type:" + food_type);
         GameObject gameObject= Instantiate(Resources.Load(food_type) as GameObject);
         gameObject.transform.parent = panel.transform;
         gameObject.transform.localPosition = new Vector3(-600, 0, 0);

@@ -36,8 +36,8 @@ public class NutritionManager : MonoBehaviour,ManagerToAchievement
         }
 
         // TEMP:
-        initializeNutritionTotal(new Nutrition(2000, 100, 50, 2400, 50));
-        //initializeNutritionTotal(new Nutrition(getNutrition.kcal, getNutrition.sugar, getNutrition.fat, getNutrition.salt, getNutrition.protein));
+        //initializeNutritionTotal(new Nutrition(2000, 100, 50, 2400, 50));
+        initializeNutritionTotal(new Nutrition(getNutrition.kcal, getNutrition.sugar, getNutrition.fat, getNutrition.salt, getNutrition.protein));
     }
 
     public void initializeNutritionTotal(Nutrition nutrition)
