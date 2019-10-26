@@ -13,7 +13,7 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
 
     private void OnTriggerEnter(Collider other)
     {
-        Food foodScript = other.GetComponent<Food>();
+        Food foodScript = other.GetComponentInParent<Food>();
         if (foodScript != null)
         {
             foodSet.Add(foodScript);
@@ -23,11 +23,11 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
 
     private void OnTriggerExit(Collider other)
     {
-        Food foodScript = other.GetComponent<Food>();
+        Food foodScript = other.GetComponentInParent<Food>();
         if (foodScript != null)
         {
             foodSet.Remove(foodScript);
-            NutritionManager.instance.addUpNutritionAmount(foodScript.nutrition);
+            NutritionManager.instance.subUpNutritionAmount(foodScript.nutrition);
         }
     }
 
