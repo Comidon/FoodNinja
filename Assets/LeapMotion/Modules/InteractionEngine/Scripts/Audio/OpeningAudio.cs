@@ -9,6 +9,7 @@ public class OpeningAudio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MusicSource.volume = 0.3f;
         MusicSource.clip = MusicClip;
     }
 
