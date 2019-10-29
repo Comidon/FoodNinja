@@ -55,6 +55,8 @@ public class NutritionListSetter : MonoBehaviour
             spaceNum = 10 - temp.Length;
             wholeList = addSpace(wholeList, spaceNum);
         }
+
+        text.text = wholeList;
     }
 
     private string addSpace(string input,int num)
