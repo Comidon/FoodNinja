@@ -188,11 +188,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
-  calories: 130
-  sugar: 34
-  fat: 0
-  salt: 0
-  protein: 1
+  calories: 100
+  sugar: 20
+  fat: 2
+  salt: 190
+  protein: 3
 --- !u!65 &2644510632222723755
 BoxCollider:
   m_ObjectHideFlags: 0
