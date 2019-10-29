@@ -592,11 +592,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
-  calories: 130
-  sugar: 34
-  fat: 0
-  salt: 0
-  protein: 1
+  calories: 283
+  sugar: 8
+  fat: 25
+  salt: 9
+  protein: 13
 --- !u!1 &4185824617432085492
 GameObject:
   m_ObjectHideFlags: 0
