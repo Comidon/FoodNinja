@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8686907129531739796}
   - component: {fileID: -689329161391234496}
   - component: {fileID: 5390237764239731279}
+  - component: {fileID: -5692338834449820194}
   m_Layer: 0
   m_Name: Rice W
   m_TagString: Food
@@ -155,8 +156,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   calories: 130
   sugar: 28
   fat: 0
   salt: 1
   protein: 3
+--- !u!95 &-5692338834449820194
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802168223904474764}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed886ade6bdb2a4499b92a0e16c394c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
