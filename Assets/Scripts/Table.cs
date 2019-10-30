@@ -20,10 +20,8 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
             foodSet.Add(foodScript);
             NutritionManager.instance.addUpNutritionAmount(foodScript.nutrition);
         }
-
-        Total_Bars.GetComponent<CanvasGroup>().alpha = 0;
-
-
+ 
+        StartCoroutine(_ShowBars());
     }
 
     private void OnTriggerExit(Collider other)
@@ -34,6 +32,20 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
             foodSet.Remove(foodScript);
             NutritionManager.instance.subUpNutritionAmount(foodScript.nutrition);
         }
+
+        StartCoroutine(_ShowBars());
+    }
+
+    private IEnumerator _ShowBars()
+    {
+        Total_Bars.GetComponent<CanvasGroup>().alpha = 1;
+        yield return new WaitForSeconds(2f);
+        HideBars();
+    }
+
+    private void HideBars()
+    {
+        Total_Bars.GetComponent<CanvasGroup>().alpha = 0.5f;
     }
 
     public HashSet<Food> GetFoodOnTable()
