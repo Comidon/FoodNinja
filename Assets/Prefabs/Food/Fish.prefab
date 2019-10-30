@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -1568743538911850596}
   - component: {fileID: 980047410382441150}
   - component: {fileID: -2008957779327042504}
+  - component: {fileID: 6499759164982125014}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Food
@@ -98,11 +99,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   calories: 255
   sugar: 0
   fat: 12
   salt: 74
   protein: 35
+--- !u!95 &6499759164982125014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91776253532916188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd7ee23509840b44d9088edde2aac544, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &349277618088991080
 GameObject:
   m_ObjectHideFlags: 0

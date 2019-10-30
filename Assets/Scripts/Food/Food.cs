@@ -10,13 +10,21 @@ public class Food : MonoBehaviour
     public int points { get; protected set; }
 
     [SerializeField]
-    private int fadeOutDuration = 100;
+    private int fadeOutDuration = 300;
 
     protected List<Material> materials;
 
     private bool dead = false;
 
-    public void CollectPoints()
+
+    private Animator anim;
+
+void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+public void CollectPoints()
     {
         // TODO: Collect Points
         // ScoreManager.instance.AddPoints(points);
@@ -25,7 +33,12 @@ public class Food : MonoBehaviour
 
     private void _FadeOut()
     {
+        anim.SetBool("IsDead", true);
+        dead = true;
+
         StartCoroutine(_DoFade());
+
+
     }
 
     private IEnumerator _DoFade()
@@ -34,11 +47,9 @@ public class Food : MonoBehaviour
 
         while (i > 0)
         {
-            for (int j = 0; j < materials.Count; j++)
+          
             {
-                Color tempC = materials[j].color;
-                tempC.a = (float)i / fadeOutDuration;
-                materials[j].color = tempC;
+
             }
             
             i--;

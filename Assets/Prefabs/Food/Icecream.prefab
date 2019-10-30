@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2965876088317315073}
   - component: {fileID: -2758073319585410064}
   - component: {fileID: 8288751253684034412}
+  - component: {fileID: -8529449531342758358}
   m_Layer: 0
   m_Name: Icecream
   m_TagString: Food
@@ -95,11 +96,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   calories: 180
   sugar: 18
   fat: 11
   salt: 45
   protein: 1
+--- !u!95 &-8529449531342758358
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089262176459127821}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67c4e3c1dabc6db4ba742e40233e0111, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5021249200127169951
 GameObject:
   m_ObjectHideFlags: 0
