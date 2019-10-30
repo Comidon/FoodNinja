@@ -34,10 +34,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
             }
         }
 
-        if (value < 90)
-        {
-            fill_area.color = Color.yellow;
-        }else if (value >= 90 && value <= 110)
+        if (value >= 90 && value <= 110)
         {
             fill_area.color = Color.green;
         }

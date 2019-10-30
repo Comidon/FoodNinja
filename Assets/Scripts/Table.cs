@@ -5,6 +5,7 @@ using UnityEngine;
 public class Table : MonoBehaviour, FoodToAchievement_Interface
 {
     private HashSet<Food> foodSet;
+    public Canvas Total_Bars;
 
     private void Awake()
     {
@@ -19,6 +20,10 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
             foodSet.Add(foodScript);
             NutritionManager.instance.addUpNutritionAmount(foodScript.nutrition);
         }
+
+        Total_Bars.GetComponent<CanvasGroup>().alpha = 0;
+
+
     }
 
     private void OnTriggerExit(Collider other)
