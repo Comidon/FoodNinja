@@ -1569,6 +1569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pavilion
       objectReference: {fileID: 0}
+    - target: {fileID: 8382248146422675088, guid: 949041fd65e95e7409c5e807a095be3c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4758303282066474115, guid: 949041fd65e95e7409c5e807a095be3c,
         type: 3}
       propertyPath: m_LocalPosition.x

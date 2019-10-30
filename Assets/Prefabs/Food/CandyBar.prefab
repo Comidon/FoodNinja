@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4182603429702076556}
   - component: {fileID: 9076862264614317718}
   - component: {fileID: 8762339159117963922}
+  - component: {fileID: 4485037450249736413}
   m_Layer: 0
   m_Name: CandyBar
   m_TagString: Food
@@ -111,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   candyBarCalories: 210
   candyBarSugar: 27
   candyBarFat: 11
@@ -159,3 +161,22 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!95 &4485037450249736413
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7783274558291676903}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2dd2b3f37319fc048ab8144ef87832f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
