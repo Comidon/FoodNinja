@@ -18,8 +18,17 @@ public class CandyBar : Food
 
     private void Awake()
     {
-        material = GetComponent<MeshRenderer>().material;
-        color = material.color;
+        MeshRenderer[] meshs = GetComponentsInChildren<MeshRenderer>();
+
+        materials = new List<Material>();
+
+        type = Assets.Scripts.Utilities.FoodType.CandyBar;
+
+        foreach (MeshRenderer item in meshs)
+        {
+            materials.Add(item.material);
+        }
+
         nutrition = new Nutrition(candyBarCalories, candyBarSugar, candyBarFat, candyBarSalt, candyBarProtein);
     }
 }

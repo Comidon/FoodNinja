@@ -18,8 +18,17 @@ public class Apple : Food
 
     private void Awake()
     {
-        material = GetComponent<MeshRenderer>().material;
-        color = material.color;
+        MeshRenderer[] meshs = GetComponentsInChildren<MeshRenderer>();
+
+        materials = new List<Material>();
+
+        type = Assets.Scripts.Utilities.FoodType.Apple;
+
+        foreach (MeshRenderer item in meshs)
+        {
+            materials.Add(item.material);
+        }
+
         nutrition = new Nutrition(appleCalories, appleSugar, appleFat, appleSalt, appleProtein);
     }
 }
