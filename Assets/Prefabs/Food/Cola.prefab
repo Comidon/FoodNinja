@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8836805621055084111}
   - component: {fileID: -8509551059630778027}
   - component: {fileID: 7844537560681248424}
+  - component: {fileID: 5265357794873650909}
   m_Layer: 0
   m_Name: Cola
   m_TagString: Food
@@ -95,11 +96,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   calories: 140
   sugar: 39
   fat: 0
   salt: 45
   protein: 0
+--- !u!95 &5265357794873650909
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934588316110686309}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f4d0c5b1c667da4f9e03ebb541bd911, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3443632219919022716
 GameObject:
   m_ObjectHideFlags: 0

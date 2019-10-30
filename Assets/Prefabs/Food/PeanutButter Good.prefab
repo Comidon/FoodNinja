@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 2895339785383353783}
   - component: {fileID: 4813842485132979702}
   - component: {fileID: -1643610254855915586}
+  - component: {fileID: 2792406248049703498}
   m_Layer: 0
   m_Name: PeanutButter Good
   m_TagString: Food
@@ -176,11 +177,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   calories: 190
   sugar: 8
   fat: 16
   salt: 80
   protein: 7
+--- !u!95 &2792406248049703498
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724207585644381037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59bc4085efb3a9a458b9668af7c144b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3745966110478161880
 GameObject:
   m_ObjectHideFlags: 0

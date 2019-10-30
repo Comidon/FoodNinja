@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 2244560993965685922}
   - component: {fileID: -1773002136962139266}
   - component: {fileID: 2644510632222723755}
+  - component: {fileID: 274753474357816469}
   m_Layer: 0
   m_Name: Cereal
   m_TagString: Food
@@ -188,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutDuration: 100
+  anim: {fileID: 0}
   calories: 100
   sugar: 20
   fat: 2
@@ -206,6 +208,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09668914, y: 0.0339069, z: 0.09928722}
   m_Center: {x: -0.0016554641, y: 0.49666712, z: -0.0017223294}
+--- !u!95 &274753474357816469
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402559000196776714}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6de128933cccaa84b8779221c6342d45, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7839272555292984835
 GameObject:
   m_ObjectHideFlags: 0
