@@ -6,7 +6,7 @@ using Hover.Core.Items.Types;
 public class WeightSelection : MonoBehaviour
 {
     private float value = 0;
-    public static double weightValue = 0;
+    public static double weightValue = 80;
     // Start is called before the first frame update
     void Start()
     {
