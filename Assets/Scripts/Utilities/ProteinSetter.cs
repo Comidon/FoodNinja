@@ -37,6 +37,7 @@ public class ProteinSetter : AchievementValueSetter
         setTotal(total);
         setMaximum(max);
         setWholeString();
+        setPie(food.nutrition.Protein / max);
     }
 
     // Update is called once per frame

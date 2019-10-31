@@ -36,7 +36,7 @@ public class CaloriesSetter : AchievementValueSetter
         setTotal(total);
         setMaximum(max);
         setWholeString();
-
+        setPie(food.nutrition.Calories / max);
     }
 
     // Update is called once per frame

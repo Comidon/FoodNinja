@@ -38,6 +38,7 @@ public class SugarSetter : AchievementValueSetter
         setTotal(total);
         setMaximum(max);
         setWholeString();
+        setPie(food.nutrition.Sugar / max);
     }
 
     // Update is called once per frame
