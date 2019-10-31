@@ -30,5 +30,6 @@ public class CandyBar : Food
         }
 
         nutrition = new Nutrition(candyBarCalories, candyBarSugar, candyBarFat, candyBarSalt, candyBarProtein);
+        iB = GetComponent<Leap.Unity.Interaction.InteractionBehaviour>();
     }
 }
