@@ -21,6 +21,7 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
             if (NutritionManager.instance != null)
                 NutritionManager.instance.addUpNutritionAmount(foodScript.nutrition);
         }
+        foodScript.IsOnTable = true;
     }
 
     private void OnTriggerExit(Collider other)
@@ -32,6 +33,7 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
             if (NutritionManager.instance != null)
                 NutritionManager.instance.subUpNutritionAmount(foodScript.nutrition);
         }
+        foodScript.IsOnTable = false;
     }
 
     public HashSet<Food> GetFoodOnTable()
