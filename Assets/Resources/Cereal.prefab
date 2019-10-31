@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4995658284843477552}
   m_Layer: 0
   m_Name: Cereal_1
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168400027775525064}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.49570373, z: 0}
+  m_LocalPosition: {x: -0, y: -0.029, z: 0}
   m_LocalScale: {x: 1, y: 0.81832814, z: 1}
   m_Children: []
   m_Father: {fileID: 8980994669467365657}
@@ -104,6 +104,8 @@ GameObject:
   - component: {fileID: 8980994669467365657}
   - component: {fileID: -7696692745130387844}
   - component: {fileID: 2244560993965685922}
+  - component: {fileID: -1773002136962139266}
+  - component: {fileID: 2644510632222723755}
   m_Layer: 0
   m_Name: Cereal
   m_TagString: Food
@@ -120,7 +122,7 @@ Transform:
   m_GameObject: {fileID: 5402559000196776714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.221, z: 0.104}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.632624, y: 1.632624, z: 1.632624}
   m_Children:
   - {fileID: 6347092715547716578}
   - {fileID: 7101170200885538410}
@@ -173,6 +175,36 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
+--- !u!114 &-1773002136962139266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402559000196776714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111996c409d7fb0479ed3ddd378c1e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calories: 100
+  sugar: 20
+  fat: 2
+  salt: 190
+  protein: 3
+--- !u!65 &2644510632222723755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402559000196776714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.09668914, y: 0.0339069, z: 0.09928722}
+  m_Center: {x: -0.0016554641, y: 0.49666712, z: -0.0017223294}
 --- !u!1 &7839272555292984835
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7839272555292984835}
   m_LocalRotation: {x: 0.020375885, y: -0, z: -0, w: 0.9997924}
-  m_LocalPosition: {x: -0.030637793, y: 0.5156671, z: -0.043565392}
+  m_LocalPosition: {x: -0.030637793, y: -0.0098, z: -0.043565392}
   m_LocalScale: {x: 1, y: 0.113636024, z: 1.7136232}
   m_Children: []
   m_Father: {fileID: 8980994669467365657}

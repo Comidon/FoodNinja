@@ -110,7 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 928a842c1aa9a0c4ebe78001f8e62ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutDuration: 100
   appleCalories: 130
   appleSugar: 34
   appleFat: 0
@@ -127,7 +126,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.011750406
+  m_Radius: 0.015
   m_Center: {x: 0.0007319967, y: 0.0020911484, z: 0}
 --- !u!114 &7020942631628408526
 MonoBehaviour:
