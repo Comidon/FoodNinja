@@ -10,6 +10,7 @@ public class BarController : MonoBehaviour
     public Slider bar;
     private float maximum;
     public float currentTotal = 0;
+    private Color previous;
 
     public bool temp;
 
@@ -24,6 +25,22 @@ public class BarController : MonoBehaviour
             if (image.name == "Fill")
             {
                 fill_area = image;
+            }
+        }
+
+        if (!temp)
+        {
+            if (value >= 90 && value <= 110)
+            {
+                fill_area.color = Color.green;
+            }
+            else if(value>100)
+            {
+                fill_area.color = Color.red;
+            }
+            else
+            {
+                fill_area.color = previous;
             }
         }
 
@@ -67,5 +84,18 @@ public class BarController : MonoBehaviour
     public float CurrentTotal
     {
         get { return currentTotal; }
+    }
+
+    private void Awake()
+    {
+        Image fill_area = null;
+        foreach (Image image in bar.GetComponentsInChildren<Image>())
+        {
+            if (image.name == "Fill")
+            {
+                fill_area = image;
+            }
+        }
+        previous = fill_area.color;
     }
 }

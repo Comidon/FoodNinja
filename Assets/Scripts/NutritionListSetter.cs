@@ -6,6 +6,7 @@ using Assets.Scripts.Utilities;
 public class NutritionListSetter : MonoBehaviour
 {
     public TextMesh text;
+    public GameObject ParentObject;
 
     // Start is called before the first frame update
     void Start()
@@ -21,44 +22,30 @@ public class NutritionListSetter : MonoBehaviour
         }
 
         string wholeList = "";
-        wholeList += "Nutrition List\n";
-        wholeList += "Name          Calories    Fat     Sugar       Salt    Protein\n";
+        float y_start = 0.25f;//decrease 0.05
 
         foreach(KeyValuePair<FoodType,Nutrition> entry in ListNoRepeat)
         {
-            wholeList += entry.Key.ToString();
-            int spaceNum = 17 - wholeList.Length;
-            wholeList = addSpace(wholeList, spaceNum);
+            y_start -= 0.05f;
+
+            wholeList = entry.Key.ToString();
+            addNewText(wholeList, new Vector3(-1, y_start, 0));
             
-            string temp = (entry.Value.Calories).ToString();
-            wholeList += temp;
-            spaceNum = 10 - temp.Length;
-            wholeList = addSpace(wholeList, spaceNum);
+            wholeList = (entry.Value.Calories).ToString();
+            addNewText(wholeList, new Vector3(-0.5f, y_start, 0));
 
-            temp = (entry.Value.Fat).ToString();
-            wholeList += temp;
-            spaceNum = 10 - temp.Length;
-            wholeList = addSpace(wholeList, spaceNum);
+            wholeList = (entry.Value.Fat).ToString();
+            addNewText(wholeList, new Vector3(-0.3f, y_start, 0));
 
-            temp = (entry.Value.Sugar).ToString();
-            wholeList += temp;
-            spaceNum = 10 - temp.Length;
-            wholeList = addSpace(wholeList, spaceNum);
+            wholeList = (entry.Value.Sugar).ToString();
+            addNewText(wholeList, new Vector3(-0.1f, y_start, 0));
 
-            temp = (entry.Value.Salt).ToString();
-            wholeList += temp;
-            spaceNum = 10 - temp.Length;
-            wholeList = addSpace(wholeList, spaceNum);
+            wholeList = (entry.Value.Salt).ToString();
+            addNewText(wholeList, new Vector3(0.1f, y_start, 0));
 
-            temp = (entry.Value.Protein).ToString();
-            wholeList += temp;
-            spaceNum = 10 - temp.Length;
-            wholeList = addSpace(wholeList, spaceNum);
-
-            wholeList += "\n";
+            wholeList = (entry.Value.Protein).ToString();
+            addNewText(wholeList, new Vector3(0.3f,y_start, 0));
         }
-
-        text.text = wholeList;
     }
 
     private string addSpace(string input,int num)
@@ -69,6 +56,20 @@ public class NutritionListSetter : MonoBehaviour
             newInput += " ";
         }
         return newInput;
+    }
+
+    private void addNewText(string text,Vector3 position)
+    {
+        GameObject newText = new GameObject(text);
+        newText.transform.localScale = new Vector3(0.02f, 0.02f, 0);
+        newText.transform.parent = ParentObject.transform;
+        newText.transform.localPosition = position;
+        newText.AddComponent<MeshRenderer>();
+        TextMesh textMesh=newText.AddComponent<TextMesh>();
+        textMesh.font = Resources.Load("Starker Marker.ttf", typeof(Font)) as Font;
+        textMesh.fontSize = 20;
+        textMesh.text = text;
+        textMesh.color = Color.black;
     }
 
     // Update is called once per frame

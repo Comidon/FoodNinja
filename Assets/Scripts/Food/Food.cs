@@ -19,6 +19,8 @@ public class Food : MonoBehaviour
 
     private bool inHand = false;
 
+    public bool IsOnTable = false;
+
     public void CollectPoints()
     {
         // TODO: Collect Points
@@ -80,8 +82,11 @@ public class Food : MonoBehaviour
             if (!inHand)
             {
                 Debug.Log("Grabbed");
-                NutritionManager.instance.addTempNutritionAmount(nutrition);
                 inHand = true;
+            }
+            if (!IsOnTable)
+            {
+                NutritionManager.instance.addTempNutritionAmount(nutrition);
             }
         }
         else
