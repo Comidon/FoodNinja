@@ -7,6 +7,9 @@ using Assets.Scripts.Utilities;
 public class NutritionManager : MonoBehaviour,ManagerToAchievement
 {
     private Dictionary<NutritionType, Slider> bars;
+    private Dictionary<NutritionType, Slider> tempBars;
+
+    [SerializeField] private List<Slider> tempSliders;
 
     // Singleton instance
     public static NutritionManager instance;
@@ -24,6 +27,8 @@ public class NutritionManager : MonoBehaviour,ManagerToAchievement
         }
 
         bars = new Dictionary<NutritionType, Slider>();
+        tempBars = new Dictionary<NutritionType, Slider>();
+
         Slider[] sliders = GetComponentsInChildren<Slider>();
         foreach (Slider slider in sliders)
         {
@@ -35,9 +40,19 @@ public class NutritionManager : MonoBehaviour,ManagerToAchievement
             }
         }
 
+        foreach (Slider slider in tempSliders)
+        {
+            string name = slider.gameObject.name;
+            NutritionType result;
+            if (Enum.TryParse(name, out result))
+            {
+                tempBars.Add(result, slider);
+            }
+        }
+
         // TEMP:
-        //initializeNutritionTotal(new Nutrition(2000, 100, 50, 2400, 50));
-        initializeNutritionTotal(new Nutrition(getNutrition.kcal, getNutrition.sugar, getNutrition.fat, getNutrition.salt, getNutrition.protein));
+        initializeNutritionTotal(new Nutrition(2000, 100, 50, 2400, 50));
+        //initializeNutritionTotal(new Nutrition(getNutrition.kcal, getNutrition.sugar, getNutrition.fat, getNutrition.salt, getNutrition.protein));
     }
 
     public void initializeNutritionTotal(Nutrition nutrition)
@@ -45,6 +60,7 @@ public class NutritionManager : MonoBehaviour,ManagerToAchievement
         foreach(KeyValuePair<NutritionType,float> entry in nutrition.getNutritionDict())
         {
             bars[entry.Key].GetComponent<BarController>().initialMaximum(entry.Value);
+            tempBars[entry.Key].GetComponent<BarController>().initialMaximum(entry.Value);
         }
     }
 
@@ -61,6 +77,23 @@ public class NutritionManager : MonoBehaviour,ManagerToAchievement
         foreach (KeyValuePair<NutritionType, float> entry in nutrition.getNutritionDict())
         {
             bars[entry.Key].GetComponent<BarController>().changeCurrentTotal(-entry.Value);
+        }
+    }
+
+    public void addTempNutritionAmount(Nutrition nutrition)
+    {
+        foreach (KeyValuePair<NutritionType, float> entry in nutrition.getNutritionDict())
+        {
+            tempBars[entry.Key].GetComponent<BarController>().assignTotal(bars[entry.Key].GetComponent<BarController>().currentTotal);
+            tempBars[entry.Key].GetComponent<BarController>().changeCurrentTotal(entry.Value);
+        }
+    }
+
+    public void subTempNutritionAmount(Nutrition nutrition)
+    {
+        foreach (KeyValuePair<NutritionType, float> entry in nutrition.getNutritionDict())
+        {
+            tempBars[entry.Key].GetComponent<BarController>().assignTotal(bars[entry.Key].GetComponent<BarController>().currentTotal);
         }
     }
 

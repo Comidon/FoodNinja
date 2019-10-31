@@ -9,7 +9,9 @@ public class BarController : MonoBehaviour
 {
     public Slider bar;
     private float maximum;
-    private float currentTotal = 0;
+    public float currentTotal = 0;
+
+    public bool temp;
 
     private void Update()
     {
@@ -25,18 +27,21 @@ public class BarController : MonoBehaviour
             }
         }
 
-        if (value < 90)
+        /*if (!temp)
         {
-            fill_area.color = Color.yellow;
-        }
-        else if (value >= 90 && value <= 110)
-        {
-            fill_area.color = Color.green;
-        }
-        else
-        {
-            fill_area.color = Color.red;
-        }
+            if (value < 90)
+            {
+                fill_area.color = Color.yellow;
+            }
+            else if (value >= 90 && value <= 110)
+            {
+                fill_area.color = Color.green;
+            }
+            else
+            {
+                fill_area.color = Color.red;
+            }
+        }*/
     }
 
     public void initialMaximum(float maximum)
@@ -47,6 +52,11 @@ public class BarController : MonoBehaviour
     public void changeCurrentTotal(float amount)
     {
         this.currentTotal += amount;
+    }
+
+    public void assignTotal(float amount)
+    {
+        this.currentTotal = amount;
     }
 
     public float Maximum
