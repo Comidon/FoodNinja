@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5f58a6e30da7543be83f73facd63cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsOnTable: 0
   calories: 320
   sugar: 2.4
   fat: 16
@@ -109,8 +110,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06754853, y: 0.06269634, z: 0.12590896}
-  m_Center: {x: -0.020190582, y: 0.02, z: 0.010640414}
+  m_Size: {x: 0.12640034, y: 0.13429871, z: 0.095372856}
+  m_Center: {x: -0.012174627, y: -0.0072648427, z: -0.00462768}
 --- !u!1 &8547686954899122668
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8547686954899122668}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.411, z: 0}
+  m_LocalPosition: {x: 0, y: -0.0081, z: 0}
   m_LocalScale: {x: 1.4141, y: 1.4141, z: 1.4141}
   m_Children: []
   m_Father: {fileID: 3623448467816610363}
