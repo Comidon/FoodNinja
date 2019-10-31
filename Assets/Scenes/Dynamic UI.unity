@@ -17926,6 +17926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 303592358}
+  ParentObject: {fileID: 0}
 --- !u!1 &1236040427
 GameObject:
   m_ObjectHideFlags: 0

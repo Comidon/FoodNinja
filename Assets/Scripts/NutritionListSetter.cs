@@ -61,6 +61,7 @@ public class NutritionListSetter : MonoBehaviour
     private void addNewText(string text,Vector3 position)
     {
         GameObject newText = new GameObject(text);
+        newText.transform.localScale = new Vector3(0.02f, 0.02f, 0);
         newText.transform.parent = ParentObject.transform;
         newText.transform.localPosition = position;
         newText.AddComponent<MeshRenderer>();
