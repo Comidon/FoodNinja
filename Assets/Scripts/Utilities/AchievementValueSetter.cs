@@ -66,8 +66,8 @@ public abstract class AchievementValueSetter:MonoBehaviour
         print("food type:" + food_type);
         GameObject gameObject= Instantiate(Resources.Load(food_type) as GameObject);
         gameObject.transform.parent = panel.transform;
-        gameObject.transform.localPosition = new Vector3(-600, 0, 0);
-        gameObject.transform.localScale = new Vector3(7000f, 7000f, 7000f);
+        gameObject.transform.localPosition = new Vector3(-700, 0, 0);
+        gameObject.transform.localScale = new Vector3(5000f, 5000f, 5000f);
         gameObject.GetComponent<Rigidbody>().useGravity = false;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         //gameObject.GetComponent<Collider>().enabled = false;
