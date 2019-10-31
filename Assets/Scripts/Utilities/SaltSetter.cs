@@ -37,6 +37,7 @@ public class SaltSetter : AchievementValueSetter
         setTotal(total);
         setMaximum(max);
         setWholeString();
+        setPie(food.nutrition.Salt / max);
     }
 
     // Update is called once per frame

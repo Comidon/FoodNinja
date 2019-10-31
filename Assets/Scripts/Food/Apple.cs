@@ -30,5 +30,6 @@ public class Apple : Food
         }
 
         nutrition = new Nutrition(appleCalories, appleSugar, appleFat, appleSalt, appleProtein);
+        iB = GetComponent<Leap.Unity.Interaction.InteractionBehaviour>();
     }
 }

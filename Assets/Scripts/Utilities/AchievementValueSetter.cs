@@ -16,6 +16,8 @@ public abstract class AchievementValueSetter:MonoBehaviour
     public Text Expected_Amount_Text;
     public TextMesh Content;
     public FoodToAchievement_Interface FoodToAchievement;
+    public Image Whole;
+    public Image Part;
 
     protected string pri_type;
     protected string pri_amount;
@@ -78,8 +80,15 @@ public abstract class AchievementValueSetter:MonoBehaviour
         pri_amount = "35";
         pri_nutrition = "Sugar";
     */
-        print("Do you know that the amount of " + pri_nutrition + "\n ONE " + pri_type + " contains makes up of\n" + pri_amount + "% of your daily value?");
+        //print("Do you know that the amount of " + pri_nutrition + "\n ONE " + pri_type + " contains makes up of\n" + pri_amount + "% of your daily value?");
         Content.text= "Do you know that the amount of " + pri_nutrition + "\n ONE " + pri_type + " contains makes up of\n" + pri_amount + "% of your daily value?";
+    }
+
+    protected void setPie(float percent)
+    {
+        Part.fillAmount = percent;
+        Whole.fillAmount = 1 - Part.fillAmount;
+        Whole.transform.localRotation = Quaternion.Euler(new Vector3(0 , 0, -360 * Part.fillAmount));
     }
 
     public abstract Food getMax();
