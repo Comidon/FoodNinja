@@ -10278,7 +10278,7 @@ MonoBehaviour:
   panel: {fileID: 652674263}
   Nutrition_Slider: {fileID: 1473532588}
   Total_Amount_Text: {fileID: 2094275555}
-  Expected_Amount_Text: {fileID: 0}
+  Expected_Amount_Text: {fileID: 2070017241}
   Content: {fileID: 140832716}
   Whole: {fileID: 0}
   Part: {fileID: 0}
