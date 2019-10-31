@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168400027775525064}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.49570373, z: 0}
+  m_LocalPosition: {x: -0, y: -0.029, z: 0}
   m_LocalScale: {x: 1, y: 0.81832814, z: 1}
   m_Children: []
   m_Father: {fileID: 8980994669467365657}
@@ -187,7 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111996c409d7fb0479ed3ddd378c1e23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutDuration: 100
   calories: 100
   sugar: 20
   fat: 2
@@ -232,7 +231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7839272555292984835}
   m_LocalRotation: {x: 0.020375885, y: -0, z: -0, w: 0.9997924}
-  m_LocalPosition: {x: -0.030637793, y: 0.5156671, z: -0.043565392}
+  m_LocalPosition: {x: -0.030637793, y: -0.0098, z: -0.043565392}
   m_LocalScale: {x: 1, y: 0.113636024, z: 1.7136232}
   m_Children: []
   m_Father: {fileID: 8980994669467365657}
