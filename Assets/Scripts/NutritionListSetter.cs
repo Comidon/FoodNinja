@@ -22,7 +22,7 @@ public class NutritionListSetter : MonoBehaviour
 
         string wholeList = "";
         wholeList += "Nutrition List\n";
-        wholeList += "Name             Calories  Fat       Sugar     Salt      Protein\n";
+        wholeList += "Name          Calories    Fat     Sugar       Salt    Protein\n";
 
         foreach(KeyValuePair<FoodType,Nutrition> entry in ListNoRepeat)
         {
