@@ -6,7 +6,7 @@ using System;
 public class AgeSelection : MonoBehaviour
 {
     private float value = 0;
-    public static decimal ageValue = 17;
+    public static decimal ageValue = 0;
     // Start is called before the first frame update
     void Start()
     {

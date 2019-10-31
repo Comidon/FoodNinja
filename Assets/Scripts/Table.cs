@@ -20,7 +20,6 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
             foodSet.Add(foodScript);
             if (NutritionManager.instance != null)
                 NutritionManager.instance.addUpNutritionAmount(foodScript.nutrition);
-                tableAudioSource.Play();
         }
     }
 
