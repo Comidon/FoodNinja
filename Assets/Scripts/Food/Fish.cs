@@ -30,5 +30,6 @@ public class Fish : Food
         }
 
         nutrition = new Nutrition(calories, sugar, fat, salt, protein);
+        iB = GetComponent<Leap.Unity.Interaction.InteractionBehaviour>();
     }
 }
