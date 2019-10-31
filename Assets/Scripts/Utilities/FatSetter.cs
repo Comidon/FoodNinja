@@ -37,6 +37,7 @@ public class FatSetter : AchievementValueSetter
         setTotal(total);
         setMaximum(max);
         setWholeString();
+        setPie(food.nutrition.Fat / max);
     }
 
     // Update is called once per frame
