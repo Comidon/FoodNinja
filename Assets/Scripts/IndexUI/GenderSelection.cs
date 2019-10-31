@@ -6,7 +6,7 @@ using System;
 public class GenderSelection : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static string Gender2 = "NA";
+    public static string Gender2 = "Male";
     public static string Gender3;
     public static string compareGender = "NA";
     void Start()
