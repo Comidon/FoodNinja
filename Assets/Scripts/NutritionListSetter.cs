@@ -69,6 +69,7 @@ public class NutritionListSetter : MonoBehaviour
         textMesh.font = Resources.Load("Starker Marker.ttf", typeof(Font)) as Font;
         textMesh.fontSize = 20;
         textMesh.text = text;
+        textMesh.color = Color.black;
     }
 
     // Update is called once per frame
