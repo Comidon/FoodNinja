@@ -5,7 +5,7 @@ using UnityEngine;
 public class Table : MonoBehaviour, FoodToAchievement_Interface
 {
     private HashSet<Food> foodSet;
-
+    public AudioSource tableAudioSource;
     private void Awake()
     {
         foodSet = new HashSet<Food>();
@@ -18,6 +18,7 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
         {
             foodSet.Add(foodScript);
             NutritionManager.instance.addUpNutritionAmount(foodScript.nutrition);
+            tableAudioSource.Play();
         }
     }
 
@@ -28,6 +29,7 @@ public class Table : MonoBehaviour, FoodToAchievement_Interface
         {
             foodSet.Remove(foodScript);
             NutritionManager.instance.subUpNutritionAmount(foodScript.nutrition);
+    
         }
     }
 

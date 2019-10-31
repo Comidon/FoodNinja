@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
       objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -935,6 +939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
       objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1333,6 +1341,10 @@ PrefabInstance:
     - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2815,6 +2827,70 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 111316, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198590, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 197548, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 183872, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 148344, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149610, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 193372, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 144398, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11499760, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456458, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423816, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403280, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453542, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495836, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419292, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492598, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
+      propertyPath: _Capability
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 542aa9a35c2a0b141bac2f7452dfe3ae, type: 3}
 --- !u!1001 &516286028
@@ -3151,6 +3227,10 @@ PrefabInstance:
     - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3981,6 +4061,10 @@ PrefabInstance:
     - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8988,6 +9072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
       objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11147,6 +11235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
       objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12125,6 +12217,10 @@ PrefabInstance:
     - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_Name
       value: HoverOpaqueCursorArcRenderer-Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 126722, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 480344, guid: 737b901aecdb514459be83a6eb717f65, type: 3}
       propertyPath: m_LocalPosition.x
