@@ -97,7 +97,7 @@ MonoBehaviour:
   sugar: 2.4
   fat: 16
   salt: 100
-  protein: 40
+  protein: 11
 --- !u!65 &3425938448684412258
 BoxCollider:
   m_ObjectHideFlags: 0

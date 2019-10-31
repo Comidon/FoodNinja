@@ -14,7 +14,7 @@ public abstract class AchievementValueSetter:MonoBehaviour
     public Slider Nutrition_Slider;
     public Text Total_Amount_Text;
     public Text Expected_Amount_Text;
-    public TextMesh Content;
+    public Text Content;
     public FoodToAchievement_Interface FoodToAchievement;
     public Image Whole;
     public Image Part;
