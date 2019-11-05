@@ -47,7 +47,18 @@ public class SpawnerRing : MonoBehaviour
 
         Vector3 vecDiff = new Vector3(radius * (float)Math.Sin(angle), 0, radius * (float)Math.Cos(angle));
 
-        GameObject food = FoodFactory.instance.GiveFood(randomType, pos + vecDiff);
+        int goForChicken = random.Next();
+
+        GameObject food;
+
+        if (goForChicken % 7 == 1)
+        {
+            food = FoodFactory.instance.GiveFood(FoodType.FriedChicken, pos + vecDiff);
+        }
+        else
+        {
+            food = FoodFactory.instance.GiveFood(randomType, pos + vecDiff);
+        }
 
         Vector3 vecForce = (-vecDiff.normalized + new Vector3(0, forceHeight, 0)) * force;
 
